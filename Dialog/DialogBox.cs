@@ -40,5 +40,16 @@ namespace Dialog
     {
       WaitingForm.CloseForm();
     }
+
+
+    public static void ShowWait2(string message = "", bool closeOnClick = false)
+    {
+      WaitingForm2.ShowForm(message, closeOnClick);
+    }
+
+    public static void CloseWait2()
+    {
+      WaitingForm2.CloseForm();
+    }
   }
 }

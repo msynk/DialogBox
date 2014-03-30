@@ -19,6 +19,22 @@ namespace TestDialogBox
     private void btnWait_Click(object sender, EventArgs e)
     {
       DialogBox.ShowWait("بابا جان صبر کن دیگه ...");
+
+    }
+
+    private void btnShowWait2_Click(object sender, EventArgs e)
+    {
+      DialogBox.ShowWait2(closeOnClick: true);
+    }
+
+    private void btnCloseWait_Click(object sender, EventArgs e)
+    {
+      DialogBox.CloseWait();
+    }
+
+    private void btnCloseWait2_Click(object sender, EventArgs e)
+    {
+      DialogBox.CloseWait2();
     }
   }
 }

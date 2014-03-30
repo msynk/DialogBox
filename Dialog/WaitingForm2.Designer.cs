@@ -1,6 +1,6 @@
 ﻿namespace Dialog
 {
-  partial class WaitingForm
+  partial class WaitingForm2
   {
     /// <summary>
     /// Required designer variable.
@@ -28,16 +28,10 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
-      this.waitingTimer = new System.Windows.Forms.Timer(this.components);
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.lblMessage = new System.Windows.Forms.Label();
       this.groupBox1.SuspendLayout();
       this.SuspendLayout();
-      // 
-      // waitingTimer
-      // 
-      this.waitingTimer.Tick += new System.EventHandler(this.waitingTimer_Tick);
       // 
       // groupBox1
       // 
@@ -58,19 +52,21 @@
       this.lblMessage.TabIndex = 1;
       this.lblMessage.Text = "لطفا صبر کنید ...";
       this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.lblMessage.Click += new System.EventHandler(this.lblMessage_Click);
       // 
-      // WaitingForm
+      // WaitingForm2
       // 
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       this.ClientSize = new System.Drawing.Size(300, 200);
       this.Controls.Add(this.groupBox1);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-      this.Name = "WaitingForm";
+      this.Name = "WaitingForm2";
       this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
       this.RightToLeftLayout = true;
       this.ShowInTaskbar = false;
-      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "WaitingForm";
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+      this.Text = "WaitingForm2";
+      this.Click += new System.EventHandler(this.WaitingForm2_Click);
       this.groupBox1.ResumeLayout(false);
       this.ResumeLayout(false);
 
@@ -78,7 +74,6 @@
 
     #endregion
 
-    private System.Windows.Forms.Timer waitingTimer;
     private System.Windows.Forms.GroupBox groupBox1;
     private System.Windows.Forms.Label lblMessage;
   }

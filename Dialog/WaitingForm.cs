@@ -31,7 +31,7 @@ namespace Dialog
         {
           CurrentInstance.lblMessage.Text = message;
         }
-        Application.Run(CurrentInstance);
+        CurrentInstance.ShowDialog();
       });
       t.IsBackground = true;
       t.SetApartmentState(ApartmentState.STA);
