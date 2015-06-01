@@ -28,6 +28,8 @@
     /// </summary>
     private void InitializeComponent()
     {
+	    this.btnShowProgressFormModal = new System.Windows.Forms.Button();
+	    this.btnShowProgressForm = new System.Windows.Forms.Button();
       this.btnShowMessage = new System.Windows.Forms.Button();
       this.btnWait = new System.Windows.Forms.Button();
       this.btnShowWait2 = new System.Windows.Forms.Button();
@@ -84,6 +86,26 @@
       this.btnCloseWait2.Text = "Close Wait 2";
       this.btnCloseWait2.UseVisualStyleBackColor = true;
       this.btnCloseWait2.Click += new System.EventHandler(this.btnCloseWait2_Click);
+	    // 
+	    // btnShowProgressForm
+	    // 
+	    this.btnShowProgressForm.Location = new System.Drawing.Point(12, 12);
+	    this.btnShowProgressForm.Name = "btnShowProgressForm";
+	    this.btnShowProgressForm.Size = new System.Drawing.Size(100, 23);
+	    this.btnShowProgressForm.TabIndex = 5;
+	    this.btnShowProgressForm.Text = "Show_Progress_Window";
+	    this.btnShowProgressForm.UseVisualStyleBackColor = true;
+	    this.btnShowProgressForm.Click += new System.EventHandler(this.btnShowProgressForm_Click);
+	    // 
+	    // btnShowProgressModal
+	    // 
+	    this.btnShowProgressFormModal.Location = new System.Drawing.Point(12, 12);
+	    this.btnShowProgressFormModal.Name = "btnShowProgressFormModal";
+	    this.btnShowProgressFormModal.Size = new System.Drawing.Size(100, 23);
+	    this.btnShowProgressFormModal.TabIndex = 5;
+	    this.btnShowProgressFormModal.Text = "Show_Progress_Dialog";
+	    this.btnShowProgressFormModal.UseVisualStyleBackColor = true;
+	    this.btnShowProgressFormModal.Click += new System.EventHandler(this.btnShowProgressFormModal_Click);
       // 
       // Form1
       // 
@@ -95,6 +117,9 @@
       this.Controls.Add(this.btnShowWait2);
       this.Controls.Add(this.btnWait);
       this.Controls.Add(this.btnShowMessage);
+      this.Controls.Add(this.btnShowProgressForm);
+      this.Controls.Add(this.btnShowProgressFormModal);
+      this.SizeChanged += new System.EventHandler(this.OnSizeChanged_Handler);
       this.Name = "Form1";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Form1";
@@ -109,6 +134,8 @@
     private System.Windows.Forms.Button btnShowWait2;
     private System.Windows.Forms.Button btnCloseWait;
     private System.Windows.Forms.Button btnCloseWait2;
+	private System.Windows.Forms.Button btnShowProgressForm;
+	private System.Windows.Forms.Button btnShowProgressFormModal;
   }
 }
 
